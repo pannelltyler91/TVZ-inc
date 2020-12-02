@@ -47,11 +47,8 @@
       <legend>User Information</legend>
 
       <p>
-        <label>
-          Email:
-          <input type= "email"  name="user"
+        <label> Email:<input type= "email"  name="user"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" title = "Must consist of numbers, letter, an '@'' and a ''.'*">
-          
 </div>
         </label>
       </p>
@@ -59,9 +56,9 @@
         <label>
           Password:
           <input type="password" id="password" name="user"
-          minlength="8" required; pattern="0-9,!,?,a-z,A-Z" title = "Must be at least 8 characters, consisting of numbers, letter, and/or special characters*">
-          <br>
-          <h7>Must be at least 8 characters, consisting of numbers, letter, and/or special characters*</h7>
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <br>
+          <h7>Must be at least 8 characters, consisting of numbers, letter, and special characters*</h7>
         </label>
       </p>
 <br>
